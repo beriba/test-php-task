@@ -16,6 +16,7 @@ class BasicController extends AbstractController
      */
     public function basic(): Response
     {
+        sleep(1);
         $number = random_int(0, 100);
 
         return new JsonResponse([
